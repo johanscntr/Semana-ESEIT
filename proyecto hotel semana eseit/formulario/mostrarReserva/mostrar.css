@@ -1,0 +1,21 @@
+:root{
+    --bgcolor-page: #eddcc1;
+    --bgcolor-1:#fff;
+    --bgcolor-2:#20272E;
+    --color-1:#328532;
+    --color-2:#66e566;
+
+    --text-color-1: #000;
+    --text-color-2: #616161;
+    --text-color-3: #fff;
+}
+
+body{
+    font-family:'poppins', sans-serif;
+    background-color: var(--bgcolor-page);
+    color: var(--text-color-1);
+    margin: 0;
+
+}
+
+

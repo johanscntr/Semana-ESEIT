@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Eseit</title>
+    <link rel="stylesheet" href="instalaciones.css">
+    <script src="reserva.js"> </script>
+</head>
+<body>
+    <header>   
+        <div class="contenedor">
+            <h1><a href="#">Hotel <span>Eseit</span></a></h1>
+            <ul>
+                <li><a href="./../inicio/paginahotel.html">Inicio</a></li>
+                <li><a href="./../instalaciones/instalaciones.html">Instalaciones</a></li>
+                <li><a href="#" class="actual">Reservas</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Contáctanos</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h2>Reserva</h2>
+            <form onsubmit="RegHuesped(); return false;">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" value="Nombre del Huésped">
+                <label for="cedula">Cédula</label>
+                <input type="text" id="cedula" name="cedula" value="Número de Cédula">
+                <label for="habitacion">Habitación</label>
+                <select id="habitacion" name="habitacion">
+                    <option value="1">Habitación Sencilla</option>
+                    <option value="2">Habitación Doble</option>
+                    <option value="3">Habitación Familiar</option>
+                </select>
+                <label for="numPersonas">Número de Personas</label>
+                <input type="number" id="numPersonas" name="numPersonas" value="1">
+                <label for="desayuno">¿Incluir desayuno?</label>
+                <select id="desayuno" name="desayuno">
+                     <option value="1">Sí</option>
+                     <option value="2">No</option>
+                </select>
+               
+            <button type="submit" class="boton-principal">Enviar Reserva</button>
+            </form>
+        </div>
+        <img src="C:\Users\johan\OneDrive\Escritorio\proyecto hotel semana eseit\imagenes\Habitacion-suite-catalonia.jpg" width="480">
+    </main>
+    <footer>
+        <div class="contenedor">
+            <ul>
+                <li><a href="#">&copy;Hotel Eseit</a></li>
+                <li><a href="#">Accesibilidad</a></li>
+                <li><a href="#">Aviso legal</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

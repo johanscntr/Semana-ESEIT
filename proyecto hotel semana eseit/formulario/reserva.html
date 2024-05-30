@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Eseit</title>
+    <link rel="stylesheet" href="reserva.css">
+    <script src="reserva.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="header__tituloContainer">
+            <h2 class="header__titulo black">Hotel</h2>
+            <h2 class="header__titulo verde">Eseit</h2>
+        </div>
+        <div class="header__encabezado">
+            <a class="hader__opcionesHeader" href="./../inicio/paginahotel.html">inicio</a>
+            <a class="hader__opcionesHeader" href="./../instalaciones/instalaciones.html">instalaciones<a>
+            <a class="hader__opcionesHeader" href="./../formulario/reserva.html">Reservas</a>
+        </div>
+        <a class="header__contact" href="./../contactos/contacto.html">Contáctanos</a>
+    </header>
+
+    <main>
+        <h2 class="main__reservaTittle">Reserva</h2>
+
+        <div class="main__formContainer">
+            <form action="nombre">
+                <h2 class="main__formTittle">Nombre</h2>
+                <input type="text" class="main__input" id="nombre">
+            </form>
+
+            <form action="cédula">
+                <h2 class="main__formTittle">Cédula</h2>
+                <input type="number" class="main__input" id="cedula">
+            </form>
+
+            <form action="Habitación">
+                <h2 class="main__formTittle">Habitación</h2>
+                <select name="" id="" class="main__input" id="habitacion">
+                    <option value="">Habitación Sencilla</option>
+                    <option value="">Habitación Familiar</option>
+                    <option value="">Habitación Doble</option>
+                </select>
+            </form>
+
+            <form action="NúmeroPersonas">
+                <h2 class="main__formTittle">Número de Personas</h2>
+                <input type="number" class="main__input" id="numPersonas">
+            </form>
+
+            <form action="NúmeroPersonas" class="formCenter">
+                <h2 class="main__formTittle">Seleccionar Desayuno</h2>
+                <input type="checkbox" id="desayuno"> 
+            </form>
+        </div>
+
+        <button>Enviar Reserva</button>
+    </main>
+    <footer>
+        <a href="#">Hotel Eseit</a>
+        <a href="#">Accesibilidad</a>
+        <a href="#">Aviso legal</a>
+    </footer>
+
+</body>
+</html>     

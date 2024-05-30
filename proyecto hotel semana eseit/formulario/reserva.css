@@ -1,0 +1,156 @@
+/* Variables para los colores */
+
+:root{
+    --bgcolor-page: #eddcc1;
+    --bgcolor-1:#fff;
+    --bgcolor-2:#20272E;
+    --color-1:#328532;
+    --color-2:#66e566;
+
+    --text-color-1: #000;
+    --text-color-2: #616161;
+    --text-color-3: #fff;
+}
+
+/* Variables para los colores */
+
+body{
+    font-family:'poppins', sans-serif;
+    background-color: var(--bgcolor-page);
+    color: var(--text-color-1);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del header */
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 84px;
+    background-color: var(--bgcolor-1);
+}
+
+.header__tituloContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__titulo{
+    font-size:24px;
+    font-weight:600;
+    font-family:'poppins', sans-serif;
+    color:var();
+    padding: 0;
+    margin: 0;
+}
+
+.black{
+    margin-left: 16px;
+}
+
+.verde{
+    color: var(--color-1);
+    padding: 0;
+    margin: 0;
+}
+
+.header__encabezado{
+    display: flex;
+    flex-direction: row;
+}
+
+.hader__opcionesHeader{
+    margin-right: 15px;
+    font-size:16px;
+    font-weight:500;
+    font-family:'poppins', sans-serif;
+    color:var();
+}
+
+.header__contact{
+    margin-right: 16px;
+    font-size:16px;
+    font-weight:500;
+}
+
+/* Estilos del main y formulario*/
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__formContainer{
+    margin-bottom:15px;
+}
+
+.main__reservaTittle{
+    font-size:32px;
+    font-weight:600;
+    font-family:'poppins', sans-serif;
+    color:var(--text-color-1);
+}
+
+.main__formTittle{
+    font-size:19px;
+    font-weight:500;
+    font-family:'poppins', sans-serif;
+    color:var(--text-color-1);
+}
+
+.main__input{
+    width:400px;
+    height:40px;
+    border-radius:5px;
+    border-style:none;
+
+}
+
+.formCenter{
+    display: flex;
+    flex-direction: row;    
+}
+
+button{
+    width:250px;
+    height:50px;
+    background-color: var(--color-1);
+    border-radius: 5px;
+    border-style: none;
+    color:var(--text-color-3);
+    font-size: 14px;
+    font-weight: 600;
+    font-family:'poppins', sans-serif;
+    margin-bottom: 100px;
+}
+
+
+/* Estilos del footer*/
+
+footer{
+    width:100%;
+    height: 50px;
+    background-color:var(--color-1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+a{
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration:none;
+    color:#fff;
+}
+

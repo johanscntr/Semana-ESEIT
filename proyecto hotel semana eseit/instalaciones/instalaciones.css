@@ -1,0 +1,170 @@
+:root{
+    --bgcolor-page: #eddcc1;
+    --bgcolor-1:#fff;
+    --bgcolor-2:#20272E;
+    --color-1:#328532;
+    --color-2:#66e566;
+
+    --text-color-1: #000;
+    --text-color-2: #616161;
+    --text-color-3: #fff;
+}
+
+body{
+    font-family:'poppins', sans-serif;/*se utiliza para especificar la familia de fuentes para el texto de un elemento*/
+    background-color: var(--bgcolor-page);
+    color: var(--text-color-1);
+    margin: 0;
+
+}
+
+a{
+    color: var(--text-color-1);
+    text-decoration: none;
+}
+
+a.actual{
+    font-weight: bold;
+}
+
+header{
+    background-color: var(--bgcolor-1);
+}
+
+header  h1 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+header  h1 > a {
+    word-spacing: -0.2em;
+}
+
+header  h1 > a > span{
+    color: var(--color-1);
+}
+
+
+
+p.eslogan{
+    color: var(--text-color-2);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-weight: bold;
+}
+
+
+footer{
+    background-color: var(--color-1);
+    color: var(--text-color-3);
+}
+
+footer a {
+    color: var(--text-color-3);
+}
+
+footer ul{
+    margin-bottom: 0;
+}
+
+.boton-principal{
+    background-color: var(--color-1);
+    color: var(--bgcolor-1);
+    border: 3px solid var(--color-1);
+    border-radius: 5em;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: .5em 1.1em;
+    display: inline-block;
+}
+
+.boton-principal:hover{
+    color: var(--color-1);
+    background-color: var(--bgcolor-1);
+}
+
+header ul, #Habitaciones ul,#testimonios ul,  footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul, #testimonios ul, footer ul{
+    display: flex;
+    place-content: space-between;
+
+}
+
+header div.contenedor{
+    display: flex;
+    place-content: space-between;    
+}
+
+header, main, footer{
+    padding: 1em;
+}
+
+
+header a{
+    padding: 1em;
+}
+
+main div.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main img{
+    width: 30%;
+}
+
+main{
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+
+
+
+footer ul{
+    place-content: space-evenly;
+}
+
+main{
+    position: relative;
+    padding-top: 14em;
+    padding-bottom: 14em;
+}
+
+main h2{
+    font-size: 2em;
+}
+
+main label{
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+main input, main textarea{
+    width: 400px;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+}
+
+main button{
+    cursor: pointer;
+
+}
+
+
+
+
+main iframe{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+}

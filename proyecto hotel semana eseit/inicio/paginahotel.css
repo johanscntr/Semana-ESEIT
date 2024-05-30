@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap');
+
+/* Color de fondo de las pagina: #eddcc1
+color del texto: #000, #616161, #fff
+
+color de la barra de navegacion superior
+
+color verde 1: #328532
+color verde 2: #66e566
+
+color del eslogan:
+
+color del fondo de Habitaciones:
+
+Tipos de letras:Poppins, sacada de google fonts
+*/
+:root{
+    --bgcolor-page: #eddcc1;
+    --bgcolor-1:#fff;
+    --bgcolor-2:#20272E;
+    --color-1:#328532;
+    --color-2:#66e566;
+
+    --text-color-1: #000;
+    --text-color-2: #616161;
+    --text-color-3: #fff;
+}
+
+body{
+    font-family:'poppins', sans-serif;
+    background-color: var(--bgcolor-page);
+    color: var(--text-color-1);
+    margin: 0;
+
+}
+
+a{
+    color: var(--text-color-1);
+    text-decoration: none;
+}
+
+a.actual{
+    font-weight: bold;
+}
+
+header{
+    background-color: var(--bgcolor-1);
+}
+
+header  h1 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+header  h1 > a {
+    word-spacing: -0.2em;
+}
+
+header  h1 > a > span{
+    color: var(--color-1);
+}
+
+main  h2 > span{
+    color: var(--color-1);
+}
+
+p.eslogan{
+    color: var(--text-color-2);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-weight: bold;
+}
+
+#Habitaciones{
+    background-color: var(--bgcolor-2);
+    color: var(--text-color-3);
+} 
+
+#testimonios{
+    background-color: var(--color-1);
+    color: var(--text-color-2);
+
+}
+
+#testimonios li{
+    background-color: var(--color-2);
+}
+
+footer{
+    background-color: var(--color-1);
+    color: var(--text-color-3);
+}
+
+footer a {
+    color: var(--text-color-3);
+}
+
+footer ul{
+    margin-bottom: 0;
+}
+
+
+
+
+.boton-principal{
+    background-color: var(--color-1);
+    color: var(--bgcolor-1);
+    border: 3px solid var(--color-1);
+    border-radius: 5em;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: .5em 1.1em;
+    display: inline-block;
+}
+
+.boton-principal:hover{
+    color: var(--color-1);
+    background-color: var(--bgcolor-1);
+}
+
+header ul, #Habitaciones ul,#testimonios ul,  footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul, #testimonios ul, footer ul{
+    display: flex;
+    place-content: space-between;
+
+}
+
+header div.contenedor{
+    display: flex;
+    place-content: space-between;    
+}
+
+header, main, aside, footer{
+    padding: 1em;
+}
+
+#testimonios li img{
+    width: 6em;
+    height: 6em;
+}
+
+#Habitaciones ul{
+    margin-left: 2em;
+    position: relative;
+}
+
+
+#Habitaciones ul li::before{
+    content: '';
+    position: absolute;
+    left: -2em;
+    width: 30px;
+    height: 30px;
+    background-image: url("../imagenes/icone-etoile-grise.png");
+    background-size: contain;
+}
+
+div.contenedor{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+header a{
+    padding: 1em;
+}
+
+main div.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main img{
+    width: 30%;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#Habitaciones{
+    position: relative;
+    font-size: 1.4em;
+    padding-top: 7em;
+    padding-bottom: 7em;
+
+}
+
+#Habitaciones ul{
+    margin-left: 5em;
+}
+
+#Habitaciones li{
+    margin-bottom: 1em;
+}
+
+#Habitaciones img{
+    display: block;
+    position: absolute;
+    right: 20em;
+    bottom:-1,5em; 
+    top: 6em;
+}
+
+#testimonios{
+    padding-top: 0 1em;
+    padding-bottom: 10em;
+
+}
+
+#testimonios ul li{
+    
+    margin: 0 1em;
+    text-align: center;
+    padding: 2em 1em;
+    width: 80%;
+    border-radius: 1em;
+    
+}
+
+#testimonios ul li div.jpg{
+    border: 5px solid var(--color-2);
+    border-radius: 50%;
+    margin-top: -1.5em;
+}
+#Contactanos{
+    position: relative;
+    padding-top: 14em;
+    padding-bottom: 14em;
+}
+
+#Contactanos h2{
+    font-size: 2em;
+}
+
+#Contactanos label{
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+#Contactanos input, #Contactanos textarea{
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+}
+
+#Contactanos button{
+    cursor: pointer;
+
+}
+
+#Contactanos div.contenedor div{
+    width: 45%;
+}
+
+#Contactanos iframe{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+}
+
+footer ul{
+    place-content: space-evenly;
+}
+
+#opciones {
+    padding: 2.5rem;
+    padding-right: 20%;
+    color: var(--clr-white);
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

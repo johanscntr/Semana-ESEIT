@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Eseit</title>
+    <link rel="stylesheet" href="paginahotel.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="paginahotel.js"></script>
+</head>
+<body>
+ <header>
+    <div class="contenedor">
+        <h1><a href="#">Hotel <span>Eseit</span></a></h1>
+
+        <ul>
+            <li><a href="#" class="actual">Inicio</a></li>
+            <li><a href="./../instalaciones/instalaciones.html">Instalaciones</a></li>
+            <li><a href="./../formulario/reserva.html">Reservas</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="./../contactos/contacto.html">Contactanos</a></li>
+        </ul>
+    </div>
+ </header>
+<main>
+    <div class="main">
+        <aside id="opciones">
+            <nav>
+                <ul class="menu">
+                    <li><button id="verifcicar" class="boton-menu boton-categoria">Verificar disponibilidad</button></li>
+                    <li><button id="consultar" class="boton-menu boton-categoria">Consultar huesped</button></li>
+                    <li><button id="reservas" class="boton-menu boton-categoria"></i>Mostrar todas las reservar</button></li>
+                    <li><button id="eliminar" class="boton-menu boton-categoria"></i>Eliminar reserva</button></li>
+                    <li><a class="boton-carrito" href="./carrito.html"><i class="bi bi-basket-fill"></i>Carrito <span id="numerito" class="númerito">0</span></a></li>
+                </ul>
+            </nav> 
+        </aside>
+    </div>
+    <div class="contenedor">
+        <div>
+            <p class="eslogan">Un lugar para descansar tranquilo</p>
+            <h2>Hotel<span>Eseit </span></h2>
+            <p><a class="boton-principal" href="./../formulario/reserva.html">Reserva</a></p>
+        </div>
+        <img src="C:\Users\johan\OneDrive\Escritorio\proyecto hotel semana eseit\imagenes\Recepcion.jpg" width="480">
+    </div>
+</main>    
+<aside id="Habitaciones">
+    <div class="contenedor">
+        <h2>Habitaciones</h2>
+        <ul>
+            <li><a href="#">Sencilla</a></li>
+            <li><a href="#">Doble</a></li>
+            <li><a href="#">Familiar</a></li>
+        </ul>
+        <img src="C:\Users\johan\OneDrive\Escritorio\proyecto hotel semana eseit\imagenes\hotel.webp" width="480" >
+    </div>
+</aside>
+
+<aside id="testimonios">
+    <div class="contenedor">
+        <ul>
+            <li>
+                <div class="jpg"> <img class="jpg" src="C:\Users\johan\OneDrive\Escritorio\proyecto hotel semana eseit\imagenes\botones.jpg" width="480"></div>
+                <blockquoteLa>La calidad nunca es un accidente. Es siempre el resultado de un esfuerzo inteligente</blockquote>
+                <cite>-Sr Barns </cite>
+            </li>
+            <li>
+                <div class="jpg"> <img class="jpg" src="C:\Users\johan\OneDrive\Escritorio\proyecto hotel semana eseit\imagenes\botones.jpg" width="480"></div>
+                <blockquoteLa>Tus clientes más descontentos son tu mayor fuente de aprendizaje</blockquote>
+                <cite>-Sr James </cite>
+
+            </li>
+            <li>
+                <div class="jpg"><img src="C:\Users\johan\OneDrive\Escritorio\proyecto hotel semana eseit\imagenes\botones.jpg" width="480"></div>
+                <blockquoteLa>A menos que tengas un nivel de satisfacción entre tus clientes del 100%, debes mejorar</blockquote>
+                <cite>-Sr Parker </cite>
+            </li>
+        </ul>
+    </div>
+</aside>
+
+<aside id="Contactanos">
+    <div class="contenedor">
+        <div>
+            <h2>Contactanos</h2>
+            <form action="">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name">
+
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <button type="submit" class="boton-principal">Enviar Mensaje</button>
+            </form>
+        </div>
+        <iframe src= "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6685.456501603389!2d-73.94008398615628!3d4.906803700004863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1713386585261!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+    </div>
+</aside>
+
+
+<footer>
+    <div class="contenedor">
+        <ul>
+            <li><a href="#">&copy;Hotel Eseit</a></li>
+            <li><a href="#">Accesibilidad</a></li>
+            <li><a href="#">Aviso legal</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
